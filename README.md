@@ -1,5 +1,6 @@
 # Neurite-Calculation-for-the-Whole-Image
-![image](https://github.com/user-attachments/assets/e04c90b4-dc3b-48a0-859f-2291b5765704)
+![image](https://github.com/user-attachments/assets/3566f36d-1626-4b0e-9c97-a3e43e55600a)
+
 
 This Fiji batch macro is designed to process neuron images with extensive clustering, especially those with low-contrast neurites.
 By utilizing the Local Thickness [1] and Skeletonize [2] plugins, we have developed a workflow for whole-image neurite calculation. The automatically saved Excel file provides the total neurite length and cell count for the entire image.
