@@ -1,12 +1,11 @@
 # Neurite-Calculation-for-the-Whole-Image
 This Fiji batch macro is designed to process neuron images with extensive clustering, especially those with low-contrast neurites.
-
 By utilizing the Local Thickness [1] and Skeletonize [2] plugins, we have developed a workflow for whole-image neurite calculation. The automatically saved Excel file provides the total neurite length and cell count for the entire image.
 
-#Examples
+# Examples
 1.	The confocal image of SH-SY5Y cells was acquired using high-content imaging (courtesy to …).
 
-#Description 
+# Description 
 1.	This is a batch IJM script. 
 2.	The demo image contains two channels: SH-SY5Y cells (green) and DAPI (blue).
 3.	The script begins by splitting the channels and renaming them accordingly.
@@ -22,16 +21,16 @@ By utilizing the Local Thickness [1] and Skeletonize [2] plugins, we have develo
 13.	A composite image is generated to visualize the results: raw neurons in white, segmented DAPI in the glasbey on dark channel, and neurites in red.
 14.	Both the composite image and batch table are saved in the same output file.
 
-#Instruction:
+# Instruction:
 1.	Place the image in the same directory for batch analysis. Also, create a null file to serve as the output file. 
 2.	Drag the script and the demo image to Fiji.
 3.	Press “Run” and choose the input and output file respectively.
 4.	The batch results will be saved as an Excel file. 
 
-#Acknowledgements
+# Acknowledgements
 Thank to Shao-Chun, Peggy, Hsu, and Archi Luo for their invaluable teaching and guidance!
 
-#Reference:
+# Reference:
 1.	R. P. Dougherty and K.-H. Kunzelmann, "Computing Local Thickness of 3D Structures with ImageJ," in Microscopy & Microanalysis 2007 Meeting, Ft. Lauderdale, FL, USA, Aug. 2007. 
 2.	T. Y. Zhang and C. Y. Suen, "A fast parallel algorithm for thinning digital patterns," Communications of the ACM, vol. 27, no. 3, pp. 236–239, 1984. 
 3.	P. Sahoo, C. Wilkins, and J. Yeager, "Threshold selection using Renyi's entropy," Pattern Recognition, vol. 30, no. 1, pp. 71–84, Jan. 1997, doi: 10.1016/S0031-3203(96)00065-9. 
