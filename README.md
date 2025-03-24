@@ -1,12 +1,12 @@
-# Neurite-Calculation-for-the-Whole-Image
+# Neurite-Measurement-for-the-Whole-Image
 ![image](https://github.com/user-attachments/assets/3566f36d-1626-4b0e-9c97-a3e43e55600a)
 
 
 This Fiji batch macro is designed to process neuron images with extensive clustering, especially those with low-contrast neurites.
-By utilizing the Local Thickness [1] and Skeletonize [2] plugins, we have developed a workflow for whole-image neurite calculation. The automatically saved Excel file provides the total neurite length and cell count for the entire image.
+By utilizing the Local Thickness [1] and Skeletonize [2] plugins, we have developed a workflow for whole-image neurite measurement. The automatically saved Excel file provides the total neurite length and cell count for the entire image.
 
 # Examples
-1.	The confocal image of SH-SY5Y cells was acquired using high-content imaging (courtesy to Dr LING-WEI HSIN).
+1.	The confocal image of SH-SY5Y cells was acquired using high-content imaging (courtesy of Dr. Ling-Wei Hsin, National Taiwan University. School of Pharmacy, College of Medicine).
 
 # Description 
 1.	This is a batch IJM script. 
@@ -31,8 +31,8 @@ By utilizing the Local Thickness [1] and Skeletonize [2] plugins, we have develo
 4.	The batch results will be saved as an Excel file. 
 
 # Acknowledgements
-Thank to Shao-Chun, Peggy, Hsu, and Archi Luo for their invaluable teaching and guidance!
-Courtesy to Dr LING-WEI HSIN for their demo image.
+Thank to Dr. Shao-Chun, Peggy, Hsu, and Ms. Archi Luo for their invaluable teaching and guidance!
+Demo image are the courtesy from Dr. Ling Wei Hsin, National Taiwan University. School of Pharmacy, College of Medicine) .
 
 # Reference
 1.	R. P. Dougherty and K.-H. Kunzelmann, "Computing Local Thickness of 3D Structures with ImageJ," in Microscopy & Microanalysis 2007 Meeting, Ft. Lauderdale, FL, USA, Aug. 2007. 
