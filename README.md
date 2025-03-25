@@ -13,10 +13,10 @@ By utilizing the Local Thickness [1] and Skeletonize [2] plugins, we have develo
 2.	The demo image contains two channels: SH-SY5Y cells (green) and DAPI (blue).
 3.	The script begins by splitting the channels and renaming them accordingly.
 4.	Neurite Measurement
-   	-aThen creating neuron mask by using the RenyiEntropy[3] thresholding method.
-	-b. The neuron mask is duplicated, and local thickness is applied to approximate the soma mask.
-	-c. The neuron mask is skeletonized, and the soma mask is subtracted to isolate the neurites.
-	d. The total length of the neurites is measured.
+   	- aThen creating neuron mask by using the RenyiEntropy[3] thresholding method.
+	- b. The neuron mask is duplicated, and local thickness is applied to approximate the soma mask.
+	- c. The neuron mask is skeletonized, and the soma mask is subtracted to isolate the neurites.
+	-  d. The total length of the neurites is measured.
 6. 	Cell Count
 	a. Otsu[4] thresholding is applied to the DAPI channel, and the result is converted to a mask.
 	b. The DAPI mask is multiplied with the normalized neuron mask to romeve non-neuron cells.
