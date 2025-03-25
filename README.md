@@ -30,11 +30,11 @@ By utilizing the Local Thickness [1] and Skeletonize [2] plugins, we have develo
 1.	Place the image in the same directory for batch analysis. Also, create a null file to serve as the output file. 
 2.	Drag the script and the demo image to Fiji.
 3.	Press “Run” and choose the input and output file respectively.
-4.	The batch results will be saved as an Excel file. 
+4.	The  collection table will be saved as an Excel file. 
 
 # Acknowledgements
-Thank to Dr. Shao-Chun, Peggy, Hsu, and Ms. Archi Luo for their invaluable teaching and guidance!
-Demo image are the courtesy from Dr. Ling Wei Hsin (Deparment of Pharmacy, National Taiwan University) .
+Thank to Dr. Shao-Chun, Peggy, Hsu, and Ms. Anchi Luo for their invaluable teaching and guidance!
+Demo images are the courtesy from Dr. Ling Wei Hsin (Deparment of Pharmacy, National Taiwan University) .
 
 # Reference
 1.	R. P. Dougherty and K.-H. Kunzelmann, "Computing Local Thickness of 3D Structures with ImageJ," in Microscopy & Microanalysis 2007 Meeting, Ft. Lauderdale, FL, USA, Aug. 2007. 
