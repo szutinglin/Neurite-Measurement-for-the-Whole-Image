@@ -17,14 +17,14 @@ By utilizing the Local Thickness [1] and Skeletonize [2] plugins, we have develo
    1. The neuron mask is duplicated, and local thickness is applied to approximate the soma mask.  
    1. The neuron mask is skeletonized, and the soma mask is subtracted to isolate the neurites.  
    1. The total length of the neurites is measured.  
-5. Cell Count
-    a) Otsu[4] thresholding is applied to the DAPI channel, and the result is converted to a mask.
-    b) The DAPI mask is multiplied with the normalized neuron mask to remove non-neuron cells.
-    c) The individual nucleus is identified by StarDist[5].
-The total cell number is counted, and the average neurite area per cell is calculated.
-All measurements are saved in a collection table.
-10.	A composite image is generated to visualize the results: raw neurons in white, segmented nucleus in the glasbey on dark channel, and neurites in red.
-11.	Both the composite image and measurement result are saved in the same output file.
+1. Cell Count
+   1. Otsu[4] thresholding is applied to the DAPI channel, and the result is converted to a mask.
+   1. The DAPI mask is multiplied with the normalized neuron mask to remove non-neuron cells.
+   1. The individual nucleus is identified by StarDist[5].
+1. The total cell number is counted, and the average neurite area per cell is calculated.
+1. All measurements are saved in a collection table.
+1. A composite image is generated to visualize the results: raw neurons in white, segmented nucleus in the glasbey on dark channel, and neurites in red.
+1. Both the composite image and measurement result are saved in the same output file.
 
 # Instruction
 1.	Place the image in the same directory for batch analysis. Also, create a null file to serve as the output file. 
