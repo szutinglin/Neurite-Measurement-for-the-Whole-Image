@@ -12,6 +12,24 @@ By utilizing the Local Thickness [1] and Skeletonize [2] plugins, we have develo
 1.	This is a batch IJM script. 
 2.	The demo image contains two channels: SH-SY5Y cells (green) and DAPI (blue).
 3.	The script begins by splitting the channels and renaming them accordingly.
+3.1. Neurite Measurement
+	a. Then creating neuron mask by using the RenyiEntropy[3] thresholding method.
+	b. The neuron mask is duplicated, and local thickness is applied to approximate the soma mask.
+	c. The neuron mask is skeletonized, and the soma mask is subtracted to isolate the neurites.
+	d. The total length of the neurites is measured.
+3.2. Cell Count
+	a. Otsu[4] thresholding is applied to the DAPI channel, and the result is converted to a mask.
+	b. The DAPI mask is multiplied with the normalized neuron mask to romeve non-neuron cells.
+	c. The individual nucleus is identified by StarDist[5].
+5.	The total cell number is counted, and the average neurite area per cell is calculated.
+6.	All measurements are saved in a collection table.
+7.	A composite image is generated to visualize the results: raw neurons in white, segmented nucleus in the glasbey on dark channel, and neurites in red.
+8.	Both the composite image and measurement result are saved in the same output file.
+9.	
+# Description 
+1.	This is a batch IJM script. 
+2.	The demo image contains two channels: SH-SY5Y cells (green) and DAPI (blue).
+3.	The script begins by splitting the channels and renaming them accordingly.
 3.1.	Neurite Measurement
 	a. Then creating neuron mask by using the RenyiEntropy[3] thresholding method.
 	b. The neuron mask is duplicated, and local thickness is applied to approximate the soma mask.
@@ -21,24 +39,6 @@ By utilizing the Local Thickness [1] and Skeletonize [2] plugins, we have develo
 	a. Otsu[4] thresholding is applied to the DAPI channel, and the result is converted to a mask.
 	b. The DAPI mask is multiplied with the normalized neuron mask to romeve non-neuron cells.
 	c. The individual nucleus is identified by StarDist[5].
-5.	The total cell number is counted, and the average neurite area per cell is calculated.
-6.	All measurements are saved in a collection table.
-7.	A composite image is generated to visualize the results: raw neurons in white, segmented nucleus in the glasbey on dark channel, and neurites in red.
-8.	Both the composite image and measurement result are saved in the same output file.
-
-# Description 
-1.	This is a batch IJM script. 
-2.	The demo image contains two channels: SH-SY5Y cells (green) and DAPI (blue).
-3.	The script begins by splitting the channels and renaming them accordingly.
-3.1. Neurite Measurement
-a.  Then creating neuron mask by using the RenyiEntropy[3] thresholding method.
-b.  The neuron mask is duplicated, and local thickness is applied to approximate the soma mask.
-c.	The neuron mask is skeletonized, and the soma mask is subtracted to isolate the neurites.
-d.	The total length of the neurites is measured.
-3.2. Cell Count
-a.	Otsu[4] thresholding is applied to the DAPI channel, and the result is converted to a mask.
-b.	The DAPI mask is multiplied with the normalized neuron mask to romeve non-neuron cells.
-c.  The individual nucleus is identified by StarDist[5].
 5.	The total cell number is counted, and the average neurite area per cell is calculated.
 6.	All measurements are saved in a collection table.
 7.	A composite image is generated to visualize the results: raw neurons in white, segmented nucleus in the glasbey on dark channel, and neurites in red.
