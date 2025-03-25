@@ -12,17 +12,19 @@ By utilizing the Local Thickness [1] and Skeletonize [2] plugins, we have develo
 1.	This is a batch IJM script. 
 2.	The demo image contains two channels: SH-SY5Y cells (green) and DAPI (blue).
 3.	The script begins by splitting the channels and renaming them accordingly.
-4.	Then creating neuron mask by using the RenyiEntropy[3] thresholding method.
-5.	The neuron mask is duplicated, and local thickness is applied to approximate the soma mask.
-6.	The neuron mask is skeletonized, and the soma mask is subtracted to isolate the neurites.
-7.	The total length of the neurites is measured.
-8.	Otsu[4] thresholding is applied to the DAPI channel, and the result is converted to a mask.
-9.	The DAPI mask is multiplied with the normalized neuron mask to identify DAPI-positive regions.
-10.	Segmentation of the DAPI-positive regions is performed using StarDist[5].
-11.	The total cell count is determined, and the average neurite area per cell is calculated.
-12.	All measurements are saved in a batch table.
-13.	A composite image is generated to visualize the results: raw neurons in white, segmented DAPI in the glasbey on dark channel, and neurites in red.
-14.	Both the composite image and batch table are saved in the same output file.
+3.1. Neurite Measurement
+  	Then creating neuron mask by using the RenyiEntropy[3] thresholding method.
+  a.	The neuron mask is duplicated, and local thickness is applied to approximate the soma mask.
+  b.	The neuron mask is skeletonized, and the soma mask is subtracted to isolate the neurites.
+  c.	The total length of the neurites is measured.
+3.2 Cell Count
+  a.	Otsu[4] thresholding is applied to the DAPI channel, and the result is converted to a mask.
+  b.	The DAPI mask is multiplied with the normalized neuron mask to romeve non-neuron cells.
+  c.The individual nucleus is identified by StarDist[5].
+4.	The total cell number is counted, and the average neurite area per cell is calculated.
+5.	All measurements are saved in a collection table.
+6.	A composite image is generated to visualize the results: raw neurons in white, segmented nucleus in the glasbey on dark channel, and neurites in red.
+7.	Both the composite image and measurement result are saved in the same output file.
 
 # Instruction
 1.	Place the image in the same directory for batch analysis. Also, create a null file to serve as the output file. 
