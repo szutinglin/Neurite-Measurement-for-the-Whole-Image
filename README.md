@@ -1,6 +1,7 @@
+[![DOI](https://zenodo.org/badge/950388748.svg)](https://doi.org/10.5281/zenodo.15099138)
+
 # Neurite-Measurement-for-the-Whole-Image
 ![image](https://github.com/user-attachments/assets/3566f36d-1626-4b0e-9c97-a3e43e55600a)
-[![DOI](https://zenodo.org/badge/950388748.svg)](https://doi.org/10.5281/zenodo.15099138)
 
 
 This Fiji batch macro is designed to process neuron images with extensive clustering, especially those with low-contrast neurites.
