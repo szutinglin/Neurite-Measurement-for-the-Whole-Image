@@ -34,7 +34,7 @@ By utilizing the Local Thickness [1] and Skeletonize [2] plugins, we have develo
 
 # Acknowledgements
 Thank to Dr. Shao-Chun, Peggy, Hsu, and Ms. Anchi Luo for their invaluable teaching and guidance!
-Demo images are captured by Yu-Hsuan Lin and courtesy from Dr. Ling-Wei Hsin (Deparment of Pharmacy, National Taiwan University).
+Demo images are captured by Yu-Hsuan Lin and courtesy from Dr. Ling-Wei Hsin (Department of Pharmacy, National Taiwan University).
 
 # Reference
 1.	R. P. Dougherty and K.-H. Kunzelmann, "Computing Local Thickness of 3D Structures with ImageJ," in Microscopy & Microanalysis 2007 Meeting, Ft. Lauderdale, FL, USA, Aug. 2007. 
