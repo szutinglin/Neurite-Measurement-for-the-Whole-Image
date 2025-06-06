@@ -7,12 +7,20 @@ By utilizing the Local Thickness [1] and Skeletonize [2] plugins, we have develo
 # Examples
 1.	The confocal image of SH-SY5Y cells was acquired using high-content imaging. (courtesy of Dr. Ling-Wei Hsin (Deparment of Pharmacy, National Taiwan University).
 
+# Versions
+ver 2.1.0 – Updated on 2025/6/5 with the following changes:
+1. Set the binary background to white to prevent errors during skeletonization.
+2. Added: Enhance Contrast, Gaussian Blur, and Otsu-based thresholding (user adjustable) on neuron mask.
+3. Implemented dialog windows for selecting folders.
+4. Image names are more descriptive and user-friendly.
+5. Added 3 checkpoints to prevent runtime errors.
+
 # Description
 1. This is a batch IJM script.
 1. The demo image contains two channels: SH-SY5Y cells (green) and DAPI (blue).
 1. The script begins by splitting the channels and renaming them accordingly.
 1. Neurite Measurement  
-   1. Then creating neuron mask by using the RenyiEntropy[3] thresholding method.  
+   1. Then create neuron mask by using the RenyiEntropy[3] thresholding method.  
    1. The neuron mask is duplicated, and local thickness is applied to approximate the soma mask.  
    1. The neuron mask is skeletonized, and the soma mask is subtracted to isolate the neurites.  
    1. The total length of the neurites is measured.  
