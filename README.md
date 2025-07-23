@@ -37,7 +37,10 @@ ver 2.1.0 – Updated on 2025/6/5 with the following changes: [![DOI](https://ze
 1.	Place the image in the same directory for batch analysis. Also, create a null file to serve as the output file. 
 2.	Drag the script and the demo image to Fiji.
 3.	Press “Run” and choose the input and output file respectively.
-4.	The  collection table will be saved as an Excel file. 
+4.	The  collection table will be saved as an Excel file.
+
+# Tutorial
+[![Watch on YouTube](https://img.youtube.com/vi/n70qHYZ5PO0/0.jpg)](https://youtu.be/n70qHYZ5PO0?si=HRUu0-h-nNL6o4hF)
 
 # Acknowledgements
 Thank to Dr. Shao-Chun, Peggy, Hsu, and Ms. Anchi Luo for their invaluable teaching and guidance!
