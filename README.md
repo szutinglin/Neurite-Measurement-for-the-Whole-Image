@@ -1,7 +1,5 @@
 # Neurite-Measurement-for-the-Whole-Image [![DOI](https://zenodo.org/badge/950388748.svg)](https://doi.org/10.5281/zenodo.15099138)
  ver2.0.0 ![image](https://github.com/user-attachments/assets/3566f36d-1626-4b0e-9c97-a3e43e55600a) 
- ver2.1.0 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16352165.svg)](https://doi.org/10.5281/zenodo.16352165)
-
 
 This Fiji batch macro is designed to process neuron images with extensive clustering, especially those with low-contrast neurites.
 By utilizing the Local Thickness [1] and Skeletonize [2] plugins, we have developed a workflow for whole-image neurite measurement. The automatically saved Excel file provides the total neurite length and cell count for the entire image.
@@ -10,7 +8,7 @@ By utilizing the Local Thickness [1] and Skeletonize [2] plugins, we have develo
 1.	The confocal image of SH-SY5Y cells was acquired using high-content imaging. (courtesy of Dr. Ling-Wei Hsin (Deparment of Pharmacy, National Taiwan University).
 
 # Versions
-ver 2.1.0 – Updated on 2025/6/5 with the following changes:
+ver 2.1.0 – Updated on 2025/6/5 with the following changes: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16352165.svg)](https://doi.org/10.5281/zenodo.16352165)
 1. Set the binary background to white to prevent errors during skeletonization.
 2. Added: Enhance Contrast, Gaussian Blur, and Otsu-based thresholding (user adjustable) on neuron mask.
 3. Implemented dialog windows for selecting folders.
